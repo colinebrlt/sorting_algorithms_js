@@ -12,7 +12,7 @@ fs.readFile(fileName, 'utf8', (error, data) => {
     console.log(data);
     const listToSort = data.split(" ").map(num => parseInt(num, 10))
     bubbleSort(listToSort);
-    sortByInsertion(listToSort);
+    insertionSort(listToSort);
 });
 
 const bubbleSort = (array) => {
@@ -26,10 +26,10 @@ const bubbleSort = (array) => {
             };
         }
     }
-    console.log(`1) Tri à bulle: ${count} comparaisons | ${numbers}`);
+    console.log(`1) Tri à bulle: ${count} comparaisons - [${numbers}]`);
 }
 
-const sortByInsertion = (array) => {
+const insertionSort = (array) => {
     let numbers = [...array];
     let count = 0;
     for (let i = 1; i < numbers.length; i++) {
@@ -42,5 +42,5 @@ const sortByInsertion = (array) => {
         }
         numbers[x] = currentNumber;
     }
-    console.log(`2) Tri par insertion: ${count} comparaisons | ${numbers}`);
+    console.log(`2) Tri par insertion: ${count} comparaisons - [${numbers}]`);
 }

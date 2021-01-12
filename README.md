@@ -15,6 +15,6 @@ The 4 algorithms implemented are:
 
 Clone this repository, and run the following in the terminal:
 
-* `node sort.js small_list.txt`
+* `$ node sort.js small_list.txt`
 
-* `node sort.js big_list.txt`
+* `$ node sort.js big_list.txt`
