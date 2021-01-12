@@ -1,3 +1,5 @@
+// Run 'node sort.js small_list.txt' or 'node sort.js big_list.txt' in terminal to try out the algorithms!
+
 const fs = require('fs');
 
 const fileName = process.argv[2];
